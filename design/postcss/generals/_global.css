@@ -1,0 +1,41 @@
+html, body {
+    @mixin font-weight 300;
+    height: 100%;
+    font-family: "Lato", "Apple LiGothic Medium", "Microsoft JhengHei", Arial, sans-serif;
+    color: $color-white;
+    font-size: 14px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: #025B7C;
+  margin: 0;
+}
+
+.hidden{
+    display:none;
+}
+
+/* for <body> */
+.no-scroll {
+    overflow: hidden;
+}
+
+.app{
+    height: 100%;
+}
+
+.main {
+  height: 100%;
+}
+
+.home {
+    height: 99%;
+    padding-top: 8px;
+}
+
+.contentValid {
+    margin: 1%;
+    list-style-type: none;
+}

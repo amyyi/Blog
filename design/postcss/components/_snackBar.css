@@ -1,0 +1,52 @@
+.Notify-snack {
+    position: fixed;
+    z-index: 1000;
+    width: 200px;
+    height: 11%;
+    left: calc(50% - 100px);  /* 100 is dialog half width*/
+    bottom: -100px;
+    background: #333;
+    transition-duration: 2s;
+}
+.Notify-snack.show {
+    bottom: 0;
+    transition-duration: 2s;
+}
+
+.Notify-snack.hide {
+    bottom: 0;
+    transition-duration: 2s;
+}
+
+.animationSlide-enter {
+    transform: translateY(100%);
+}
+.animationSlide-enter.animationSlide-enter-active {
+    position: fixed;
+    z-index: 1000;
+    width: 200px;
+    height: 11%;
+    left: calc(50% - 100px);  /* 100 is dialog half width*/
+    bottom: 0;
+    background: #333;
+
+}
+.animationSlide-leave {
+    transform: translateY(0px);
+}
+.animationSlide-leave.animationSlide-leave-active {
+    position: fixed;
+    z-index: 1000;
+    width: 200px;
+    height: 11%;
+    left: calc(50% - 100px);  /* 100 is dialog half width*/
+    bottom: 0;
+    background: #333;
+    transform: translateY(100%);
+    transition: transform 1000ms ease-in-out;
+}
+
+.snack-ul {
+    list-style-type: none;
+}
+

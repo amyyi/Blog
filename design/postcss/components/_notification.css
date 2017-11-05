@@ -1,0 +1,9 @@
+/* overwritten react-notification-system style */
+.notification {
+    color: #fff !important;
+    background-color: #000 !important;
+}
+.notification-tr{
+    color: #fff !important;
+    background-color: #000 !important;
+}

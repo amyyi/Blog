@@ -1,0 +1,129 @@
+/* general */
+.sign-in {
+    height: 100%;
+    @mixin background-image travel.png;
+}
+.sign-container {
+    width: 368px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.signbox {
+    position: relative;
+    top: 30%;
+    border: 1px solid #0089a7;
+    box-shadow: $color-black 0 0 15px, $color-black-50 0 0 4px 0;
+    background: #0089a7;
+    opacity: .7;
+}
+
+.signbox-logo {
+    display: block;
+    width: 203px;
+    height: 54px;
+    margin: 0 auto;
+    margin-top: 73px;
+}
+
+.signbox-form {
+    margin-top: 77px;
+    padding-left: 41px;
+    margin-bottom: 40px;
+    padding-right: 43px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.icon-input {
+    z-index: 9999999;
+    position: absolute;
+    top: 7px;
+    left: 8px;
+    color: #8e8484;
+}
+
+.signbox-title {
+    margin-top: 45px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    letter-spacing: 1.7px;
+}
+
+.signbox-submit {
+    position: relative;
+    display: block;
+    width: 198px;
+    height: 28px;
+    border: 0;
+    margin: 0 auto;
+    margin-top: 46.7px;
+    color:#fff;
+    background: #000;
+    cursor: pointer;
+}
+
+.signbox-submit:disabled {
+    cursor: not-allowed;
+    opacity: .7;
+}
+
+.signbox-copyright {
+    width: 100%;
+    margin-top: 43px;
+    text-align: center;
+    color: $color-warm-gray;
+}
+
+.signbox-link-wrap {
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.signbox-link {
+    margin-left: 6px;
+    color: #BDC0BA;
+}
+
+/* sign-in */
+.sign-in {
+    .errmsg-wrap {
+        top: 148px;
+        text-align: center;
+        color: #D0104C;
+    }
+}
+
+/* sign-up */
+.sign-up {
+    .signbox-form {
+        margin-top: 41px;
+    }
+
+    .password {
+        .form-assistant-dialog {
+            left: -135%;
+        }
+    }
+}
+
+.inline-input {
+    width: 100%;
+    margin: 19px 0;
+    .padding-input {
+        width: 81%;
+        padding: 5px 5px 5px 45px;
+    }
+}
+.error-msg {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    color: #F8C3CD;
+}

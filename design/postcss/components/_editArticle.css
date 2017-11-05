@@ -1,0 +1,60 @@
+.edit-article {
+    // display: none;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    opacity: 0.8;
+}
+
+.edit-title {
+    display: flex;
+    margin-left: 12%;
+}
+
+.edit-input {
+    position: relative;
+    width: 100%;
+    margin-bottom: 19px;
+    .padding-input {
+        width: 66%;
+        padding: 5px 5px 5px 45px;
+    }
+}
+
+.content-textarea {
+    min-height: 101px;
+    line-height: 22px;
+    border-color: #dfdfdf;
+}
+
+.input-count {
+    position: absolute;
+    right: 12%;
+    visibility:hidden
+}
+
+.show{
+    visibility:visible
+}
+
+.save-block{
+    margin-top: 4%;
+}
+
+.save-btn {
+    width: 100px;
+    height: 47px;
+    letter-spacing: 1px;
+    border: 0px;
+    border-radius: 5px;
+    margin:6px;
+    cursor: pointer;
+    background: #FF5A5F;
+    color: #fff;
+    &:disabled {
+      cursor: not-allowed;
+      color: graytext;
+    }
+}

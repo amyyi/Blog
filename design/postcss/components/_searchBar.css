@@ -1,0 +1,109 @@
+.search-form {
+    margin-top: 30px;
+}
+.select-div {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    height: 46px;
+    border: solid 1px #ccc;
+    background-image: url('../img/svg/icon-expand-black.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #fff;
+}
+
+.select-ul {
+    position: absolute;
+    top: 46px;
+    width: 100%;
+    display: none;
+    list-style: none;
+    background: #fff;
+    color: #333;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    border: 1px solid #333;
+}
+
+.open {
+    display: block;
+}
+
+.has-error{    border: 2px solid #F8C3CD;}
+
+.search-select{
+    width: 100%;
+    height: 46px;
+    border: none;
+    padding-left: 10px;
+    appearance: none;   // no default arrow
+    background: transparent;
+}
+
+.search-error {
+    position: absolute;
+    top: 28%;
+}
+
+.filter-div {
+    position: relative;
+    display: inline-block;
+    width: 11%;
+    height: 46px;
+    border: solid 1px #ccc;
+}
+
+.input-width {
+    width: 24%;
+}
+
+.full-inputWidth {
+    width: 100%;
+    height: 42px;
+}
+
+.input-nobg {
+    background: none;
+    border: 0;
+}
+
+.errorTip {
+    position: relative;
+}
+
+.trangle {
+    position: absolute;
+    top: -14px;
+    left: 21px;
+    width: 22px;
+    height: 27px;
+    @mixin background-image svg/black-triangle.svg;
+}
+
+.tip-span {
+    position: absolute;
+    top: 10px;
+    left: 5%;
+    padding: 3%;
+    background: #333;
+}
+
+.search-btn {
+    height: 47px;
+    letter-spacing: 1px;
+    border: 0px;
+    border-radius: 5px;
+    margin:6px;
+    background: #FF5A5F;
+    color: #fff;
+    &:disabled {
+      color: graytext;
+    }
+}
+
+.blue-btn {
+  background: #2cced4;
+  color: #fff;
+}

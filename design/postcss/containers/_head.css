@@ -1,0 +1,37 @@
+/* general */
+.head-div {
+    margin-left: 1%;
+}
+
+.title {
+    margin: 0;
+}
+
+.white-trangle {
+    position: absolute;
+    width: 27px;
+    height: 19px;
+    top: 27px;
+    left: 61px;
+    @mixin background-image svg/white-triangle.svg;
+}
+@media only screen and (max-width: 401px) {
+    .title  {
+        display: inline-flex;
+        margin-bottom: 0px;
+        margin-right: 14px;
+    }
+}
+
+.mobile-drop {
+    display: none;
+}
+
+@media only screen and (max-width: 401px) {
+    .mobile-drop  {
+        display: inline-flex;
+        height: 1em;
+        width: 20px;
+        @mixin background-image svg/icon-expand-black.svg;
+    }
+}

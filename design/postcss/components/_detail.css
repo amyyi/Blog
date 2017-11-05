@@ -1,0 +1,27 @@
+.detail-block {
+    width: 89%;
+    margin-left: 3%;
+    color: #fff;
+}
+.detail-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #FEDFE1;
+}
+.title-p {
+    color: #fff;
+    border-bottom: 1px solid #d8d0d0;
+    line-height: 50px;
+    font-size: 19px;
+}
+
+.detail-content {
+    max-height: 165px;
+    line-height: 30px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.error-title {
+    text-align: center;
+}

@@ -1,0 +1,86 @@
+.dialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: .5s;
+    &.show {
+        z-index: 1000;
+        background: rgba(0, 0, 0, 0.69);
+        opacity: 1;
+    }
+}
+
+.dialog-box {
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    width: 500px;
+    min-height: 200px;
+    font-size: 18px;
+    line-height: 25px;
+    background-color: white;
+    .btn-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px;
+    }
+}
+
+.close-icon {
+    float: right;
+    font-size: 25px;
+    background: none;
+    border: none;
+}
+
+.dialog-title {
+    font-size: 25px;
+    padding-bottom: 23px;
+    border-bottom: solid 1px #DBDBDB;
+}
+
+.dialog-body {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex: 1;
+    padding: 40px;
+    color: black;
+}
+
+.dialog-footer {
+    display: flex;
+    .btn-danger,
+    .btn-basic {
+        flex: 1;
+    }
+    .btn-basic {
+        &:hover {
+            color: white;
+            background-color: blue;
+        }
+        &:active {
+            color: white;
+            background-color: blue;
+        }
+    }
+}
+
+.dialog-base {
+    .dialog-body {
+        text-align: center;
+    }
+}
